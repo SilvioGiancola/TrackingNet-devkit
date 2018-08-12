@@ -50,17 +50,19 @@ TrackingNet
 
 Tested on Ubuntu 16.04 LTS
 
-`conda env create -f environment.yml`
 
-`source activate TrackingNet`
+ - Create the environment:
+
+`conda env create -f environment.yml`
 
 or
 
-`conda create -n TrackingNet python=3 requests pandas tqdm numpy imageio`
+`conda create -n TrackingNet python=3 requests pandas tqdm numpy`
+
+ - Activate the environment:
 
 `source activate TrackingNet`
 
-`conda install -c menpo opencv`
 
 
 # Download the dataset
@@ -92,7 +94,7 @@ To download the training set only:
 
 `python download_TrackingNet.py --trackingnet_dir <trackingnet_dir> --chunk Train`
 
-To download a few chunk of the training set only:
+To download a few chunk of the training set only (here chunks 0, 2, 4 and 11):
 
 `python download_TrackingNet.py --trackingnet_dir <trackingnet_dir> --chunk 0,2,4,11`
 
@@ -119,7 +121,7 @@ To extract all the zipped sequences for the complete dataset:
 
 `python extract_zip.py --trackingnet_dir <trackingnet_dir>`
 
-To extract the zipped sequences for a few chunk of the dataset:
+To extract the zipped sequences for a few chunk of the dataset (here chunks 0, 2, 4 and 11):
 
 `python extract_zip.py --trackingnet_dir <trackingnet_dir> --chunk 0,2,4,11`
 
@@ -133,14 +135,20 @@ By default, the download script will not overwrite the zip files already downloa
  
 
 
-# Generate Frames with the annotation boundingboxes
+# (Optional) Generate Frames with the annotation boundingboxes
+
+This part requires `imageio` and `opencv`:
+
+`conda install imageio`
+
+`conda install -c menpo opencv`
 
 To generate the BB in the frames for the complete dataset:
 
 `python generate_BB_frames.py --output_dir <trackingnet_dir>`
 
-To generate the BB in the frames for a few chunk of the complete dataset:
+To generate the BB in the frames for a few chunk of the complete dataset (here chunks 0, 2, 4 and 11):
 
-`python generate_BB_frames.py --output_dir <trackingnet_dir> --chunk 1,2,4`
+`python generate_BB_frames.py --output_dir <trackingnet_dir> --chunk 0,2,4,11`
 
 
