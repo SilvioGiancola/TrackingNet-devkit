@@ -137,9 +137,7 @@ By default, the download script will not overwrite the zip files already downloa
 
 # (Optional) Generate Frames with the annotation boundingboxes
 
-This part requires `imageio` and `opencv`:
-
-`conda install imageio`
+This part requires `opencv`:
 
 `conda install -c menpo opencv`
 
