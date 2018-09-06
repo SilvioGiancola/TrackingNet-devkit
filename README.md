@@ -150,3 +150,17 @@ To generate the BB in the frames for a few chunk of the complete dataset (here c
 `python generate_BB_frames.py --output_dir <trackingnet_dir> --chunk 0,2,4,11`
 
 
+# Evaluate the results of a tracker with a given ground truth
+
+If you plan to submit results on our [evaluation server](http://eval.tracking-net.org), you may want to validate your results first.
+
+The evaluation code we are using is available on `metrics.py`, whhich can be used as following:
+
+`python metrics.py --GT_zip <GT.zip> --subm_zip <subm.zip>`
+
+A dummy example of file is provided here:
+
+`python metrics.py --GT_zip dummy_GT.zip --subm_zip dummy_subm.zip`
+
+
+
