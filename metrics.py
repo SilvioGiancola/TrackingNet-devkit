@@ -128,10 +128,11 @@ def evaluate(test_annotation_file, user_submission_file):
 
 
 
-        Success_test_avg += np.array([np.sum(i > thres for i in df["IoU"]).astype(float) / (len(df["IoU"]))  for thres in Success_X]) 
+        Success_test_avg += np.array([np.sum(i >= thres for i in df["IoU"]).astype(float) / (len(df["IoU"]))  for thres in Success_X]) 
         Precision_test_avg += np.array([np.sum(i <= thres for i in df["distance"]).astype(float) / (len(df["distance"]))  for thres in Precision_X]) 
         NPrecision_test_avg += np.array([np.sum(i <= thres for i in df["ndistance"]).astype(float) / (len(df["ndistance"]))  for thres in NPrecision_X]) 
 
+        print(df.loc[df["IoU"] < 1.0])
 
   
     df_all.reset_index(drop=True, inplace=True)
@@ -152,4 +153,24 @@ def evaluate(test_annotation_file, user_submission_file):
 
     return Sanity_check_Average, Success_Average, Precision_Average, NPrecision_Average
 
+
+
+import argparse
+
+
+if __name__ == "__main__": 
+    p = argparse.ArgumentParser(description='Get metrics from GT and submission')
+    p.add_argument('--GT_zip', type=str, default='dummy_GT.zip',
+        help='zipped folder with GT OTB tracking bounding boxes.')
+    p.add_argument('--subm_zip', type=str, default='dummy_subm.zip',
+        help='zipped folder with submitted OTB tracking bounding boxes.')
+
+    args = p.parse_args()
+
+    Coverage, Success, Precision, Normalized_Precision = evaluate(args.GT_zip, args.subm_zip)
+
+    print("Coverage", Coverage)
+    print("Precision", Precision)
+    print("Normalized Precision", Normalized_Precision)
+    print("Success", Success)
 
