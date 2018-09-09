@@ -14,34 +14,10 @@ TrackingNet
  - Test
    - zips
    - frames
- - Train_0
+ - Train_X (with X from 0 to 11)
    - zips
    - frames
    - anno
- - Train_1
-   - zips
-   - frames
-   - anno
- - Train_2
-   - ...
- - Train_3
-   - ...
- - Train_4
-   - ...
- - Train_5
-   - ...
- - Train_6
-   - ...
- - Train_7
-   - ...
- - Train_8
-   - ...
- - Train_9
-   - ...
- - Train_10
-   - ...
- - Train_11
-   - ...
 ```
 
 
