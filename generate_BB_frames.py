@@ -85,6 +85,9 @@ if __name__ == "__main__":
 	try:       
 		if ("ALL" in args.chunk.upper()):
 			args.chunk = ["TRAIN_"+str(c) for c in range(12)]
+			args.chunk.insert(0, "TEST")     
+		elif ("TEST" in args.chunk.upper()):
+			args.chunk = ["TEST"]
 		elif ("TRAIN" in args.chunk.upper()):
 			args.chunk = ["TRAIN_"+str(c) for c in range(12)]
 		else :
