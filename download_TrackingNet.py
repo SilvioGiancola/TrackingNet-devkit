@@ -13,10 +13,10 @@ def main(trackingnet_dir="TrackingNet", csv_dir=".", overwrite=False, chunks=[],
 	for chunk_folder in chunks:
 		chunk_folder = chunk_folder.upper()
 
-		if ("TEST" in chunk_folder):
-			my_data = ["ZIPS"]
-		else:
-			my_data = data
+		#if ("TEST" in chunk_folder):
+		#	my_data = ["ZIPS"]
+		#else:
+		my_data = data
 
 
 		for datum in my_data:
