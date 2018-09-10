@@ -14,6 +14,7 @@ TrackingNet
  - Test
    - zips
    - frames
+   - anno (only for 1st frame)
  - Train_X (with X from 0 to 11)
    - zips
    - frames
