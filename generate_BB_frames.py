@@ -29,7 +29,7 @@ def printBB(TrackingNet_dir, frames_folder, BB_file):
 		# print("already Extracted") 
 		return
 
-	for i in range(len(frames_list)):
+	for i in range(len(ArrayBB)):
 
 		frame_file = str(i)+".jpg"
 		imgs_file = os.path.join(frames_folder, frame_file)
