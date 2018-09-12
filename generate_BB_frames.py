@@ -18,7 +18,7 @@ def printBB(TrackingNet_dir, frames_folder, BB_file):
 
 
 	if ( not len(ArrayBB) == len(frames_list)):
-		print("Not the same number of frames and annotation!") 
+		print("Not the same number of frames and annotation!", len(ArrayBB), len(frames_list) ) 
 
 	if(not os.path.exists(frames_BB_folder)):
 		os.makedirs(frames_BB_folder)
