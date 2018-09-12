@@ -23,7 +23,7 @@ def printBB(TrackingNet_dir, frames_folder, BB_file):
 		if (np.ndim(ArrayBB) == 1):
 			tmp = ArrayBB
 			del ArrayBB
-			ArrayBB = []
+			ArrayBB = [[]]
 			ArrayBB[0] = tmp
 
 
