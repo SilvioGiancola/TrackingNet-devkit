@@ -18,8 +18,7 @@ def printBB(TrackingNet_dir, frames_folder, BB_file):
 
 
 	if ( not len(ArrayBB) == len(frames_list)):
-		print("Not the same number of frames and annotation!", len(ArrayBB), len(frames_list) ) 
-		print(ArrayBB)
+		#print("Not the same number of frames and annotation!" ) 
 		if (np.ndim(ArrayBB) == 1):
 			tmp = ArrayBB
 			del ArrayBB
