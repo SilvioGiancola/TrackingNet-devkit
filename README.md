@@ -94,6 +94,7 @@ By default, the unzipping script will not overwrite the frames that are properly
 If any zip file is currupted, a error message will appear `Error: the zip file [zip_file_name] is corrupted`. 
 In thas case, remove the corrupted zip file manually and run the download script again. 
 By default, the download script will not overwrite the zip files already downloaded.
+Note that Google Drive limits the download bandwidth to ~10TB/day. To ensure a good share between all users, avoid downloading the dataset several times and prefer sharing it with your colleagues using an old-fashion HDD.
  
 
 
