@@ -74,6 +74,7 @@ Please look at `python download_TrackingNet.py --help` for more details on the o
 In case an error such as `Permission denied: https://drive.google.com/uc?id=<ID>, Maybe you need to change permission over 'Anyone with the link'?` occurs, please check your internet connection and run again the script.
 The script will not overwrite the previous sequences of videos if are already completely downloaded.
 
+Note that Google Drive limits the download bandwidth to ~10TB/day. To ensure a good share between all users, avoid downloading the dataset several times and prefer sharing it with your colleagues using an old-fashion HDD.
 
 
 # Unzip the frames
@@ -94,7 +95,6 @@ By default, the unzipping script will not overwrite the frames that are properly
 If any zip file is currupted, a error message will appear `Error: the zip file [zip_file_name] is corrupted`. 
 In thas case, remove the corrupted zip file manually and run the download script again. 
 By default, the download script will not overwrite the zip files already downloaded.
-Note that Google Drive limits the download bandwidth to ~10TB/day. To ensure a good share between all users, avoid downloading the dataset several times and prefer sharing it with your colleagues using an old-fashion HDD.
  
 
 
