@@ -1,6 +1,23 @@
 # TrackingNet-devkit
 
-Development kit for TrackingNet
+Development kit for the dataset **TrackingNet: A Large-Scale Dataset and
+Benchmark for Object Tracking in the Wild**.
+
+Compete in our benchmark by submitting your result on our [evaluation server](http://eval.tracking-net.org).
+
+For more details, please refer to our [paper](https://ivul.kaust.edu.sa/Documents/Publications/2018/TrackingNet%20A%20Large%20Scale%20Dataset%20and%20Benchmark%20for%20Object%20Tracking%20in%20the%20Wild.pdf).
+
+```
+@InProceedings{Muller_2018_ECCV,
+author = {Muller, Matthias and Bibi, Adel and Giancola, Silvio and Alsubaihi, Salman and Ghanem, Bernard},
+title = {TrackingNet: A Large-Scale Dataset and Benchmark for Object Tracking in the Wild},
+booktitle = {The European Conference on Computer Vision (ECCV)},
+month = {September},
+year = {2018}
+}
+```
+
+
 
 
 # Structure of the dataset
