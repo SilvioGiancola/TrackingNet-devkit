@@ -81,7 +81,7 @@ Note that Google Drive limits the download bandwidth to ~10TB/day. To ensure a g
 
 To extract all the zipped sequences for the complete dataset:
 
-`python extract_zip.py --trackingnet_dir <trackingnet_dir>`
+`python extract_frame.py --trackingnet_dir <trackingnet_dir>`
 
 ### Optional parameters:
   - `--trackingnet_dir`: path where to download the TrackingNet dataset
