@@ -3,7 +3,7 @@ import pandas as pd
 from tqdm import tqdm
 import argparse
 
-import downloader
+import gdown
 
 
 
@@ -37,11 +37,7 @@ def main(trackingnet_dir="TrackingNet", csv_dir=".", overwrite=False, chunks=[],
 				destination_path = os.path.join(trackingnet_dir, chunk_folder, datum.lower(), Google_drive_file_name)
 
 				if (not os.path.exists(destination_path)): 
-
-					downloader.download(url='https://drive.google.com/uc?id={id}'.format(id=Google_drive_file_id),
-						output=destination_path,
-						quiet=True,
-					)
+					gdown.download(url=f'https://drive.google.com/uc?id={Google_drive_file_id}', output=destination_path, quiet=True)
 
 
 
