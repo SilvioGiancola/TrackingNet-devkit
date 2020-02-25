@@ -76,6 +76,14 @@ The script will not overwrite the previous sequences of videos if are already co
 
 Note that Google Drive limits the download bandwidth to ~10TB/day. To ensure a good share between all users, avoid downloading the dataset several times and prefer sharing it with your colleagues using an old-fashion HDD.
 
+### [Update from 25-02-2020]: Back up links
+
+To anyone who still has issue downloading TrackingNet, we are currently trying to find more reliable solutions. For now, we have created back up links to download full chunks of training (and the testing chunk). It's still hosted on Google Drive, but will be easier to spread around the community using alternative sharing platforms (e.g. Baidu, Dropbox, good old HDD,...).
+
+Here are two back up links: [[link1](https://drive.google.com/drive/u/2/folders/1gJOR-r-jPFFFCzKKlMOW80WFtuaMiaf6)] [[link2](https://drive.google.com/drive/u/2/folders/1xrxlI6otQvWlRJjsX1pddZBY9h2WbmVi)]
+
+Now, it appears that Google Drive is limiting the download if you are not signed in with you gmail account. If you have any issue downloading it, please make sure you are signed in google drive with you gmail account. We will track the situation in the next days.
+
 
 # Unzip the frames
 
