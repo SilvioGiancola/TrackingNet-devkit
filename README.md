@@ -17,8 +17,23 @@ year = {2018}
 }
 ```
 
-### UPDATE April 22nd, 2020
+### [Update from April 22nd, 2020]: Bittorent solution 
 We are currently experimenting a bittorrent solution to share TrackingNet among the tracking community. The torrent is available on [https://academictorrents.com/details/1faf1b53cc0099d2206f02be42b5688952c3c6b3](https://academictorrents.com/details/1faf1b53cc0099d2206f02be42b5688952c3c6b3).
+
+It may be very slow at the beginning, but it will improve once more people will require the a copy. Here are some guidelines:
+ - I hope everyone will play fair and seed its torrent as we are currently doing.
+ - Feel free to share the torrent between colleagues, seedbox or mirroring server.
+ - The google drive backup links [[link1](https://drive.google.com/drive/u/2/folders/1gJOR-r-jPFFFCzKKlMOW80WFtuaMiaf6)] [[link2](https://drive.google.com/drive/u/2/folders/1xrxlI6otQvWlRJjsX1pddZBY9h2WbmVi)] are still available, but capped in daily bandwidth.
+ - If you already have downloaded a chunk from the backup links, please put it in the output folder of your torrent: it won't download it again and will save you precious download time.
+ 
+ 
+### [Update from February 25th, 2020]: Back up links
+
+To anyone who still has issue downloading TrackingNet, we are currently trying to find more reliable solutions. For now, we have created back up links to download full chunks of training (and the testing chunk). It's still hosted on Google Drive, but will be easier to spread around the community using alternative sharing platforms (e.g. Baidu, Dropbox, good old HDD,...).
+
+Here are two back up links: [[link1](https://drive.google.com/drive/u/2/folders/1gJOR-r-jPFFFCzKKlMOW80WFtuaMiaf6)] [[link2](https://drive.google.com/drive/u/2/folders/1xrxlI6otQvWlRJjsX1pddZBY9h2WbmVi)]
+
+Now, it appears that Google Drive is limiting the download if you are not signed in with you gmail account. If you have any issue downloading it, please make sure you are signed in google drive with you gmail account. We will track the situation in the next days.
 
 
 # Structure of the dataset
@@ -77,13 +92,10 @@ The script will not overwrite the previous sequences of videos if are already co
 
 Note that Google Drive limits the download bandwidth to ~10TB/day. To ensure a good share between all users, avoid downloading the dataset several times and prefer sharing it with your colleagues using an old-fashion HDD.
 
-### [Update from 25-02-2020]: Back up links
 
-To anyone who still has issue downloading TrackingNet, we are currently trying to find more reliable solutions. For now, we have created back up links to download full chunks of training (and the testing chunk). It's still hosted on Google Drive, but will be easier to spread around the community using alternative sharing platforms (e.g. Baidu, Dropbox, good old HDD,...).
-
-Here are two back up links: [[link1](https://drive.google.com/drive/u/2/folders/1gJOR-r-jPFFFCzKKlMOW80WFtuaMiaf6)] [[link2](https://drive.google.com/drive/u/2/folders/1xrxlI6otQvWlRJjsX1pddZBY9h2WbmVi)]
-
-Now, it appears that Google Drive is limiting the download if you are not signed in with you gmail account. If you have any issue downloading it, please make sure you are signed in google drive with you gmail account. We will track the situation in the next days.
+### Further downloading options:
+ - Google Drive (backup links): [[link1](https://drive.google.com/drive/u/2/folders/1gJOR-r-jPFFFCzKKlMOW80WFtuaMiaf6)] [[link2](https://drive.google.com/drive/u/2/folders/1xrxlI6otQvWlRJjsX1pddZBY9h2WbmVi)]
+ - Bittorrent: [https://academictorrents.com/details/1faf1b53cc0099d2206f02be42b5688952c3c6b3](https://academictorrents.com/details/1faf1b53cc0099d2206f02be42b5688952c3c6b3)
 
 
 # Unzip the frames
