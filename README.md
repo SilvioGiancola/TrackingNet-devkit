@@ -17,7 +17,8 @@ year = {2018}
 }
 ```
 
-
+### UPDATE April 22nd, 2020
+We are currently experimenting a bittorrent solution to share TrackingNet among the tracking community. The torrent is available on [https://academictorrents.com/details/1faf1b53cc0099d2206f02be42b5688952c3c6b3](https://academictorrents.com/details/1faf1b53cc0099d2206f02be42b5688952c3c6b3).
 
 
 # Structure of the dataset
