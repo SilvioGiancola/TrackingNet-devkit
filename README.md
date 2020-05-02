@@ -17,6 +17,25 @@ year = {2018}
 }
 ```
 
+### [Update from May 2nd, 2020]: Backup FTP solution
+We have a new FTP solution to download the different splits for training/testing:
+
+[[Test]](https://exrcsdrive.kaust.edu.sa/exrcsdrive/index.php/s/wwz8eLYYWDycHWa)
+[[Train_0]](https://exrcsdrive.kaust.edu.sa/exrcsdrive/index.php/s/nCbCkSuvgmXrH82)
+[[Train_1]](https://exrcsdrive.kaust.edu.sa/exrcsdrive/index.php/s/HRvKpixo9fana1W)
+[[Train_2]](https://exrcsdrive.kaust.edu.sa/exrcsdrive/index.php/s/d3mUvrWBs5xn626)
+[[Train_3]](https://exrcsdrive.kaust.edu.sa/exrcsdrive/index.php/s/cFs9WcQhXHkKZqA)
+[[Train_4]](https://exrcsdrive.kaust.edu.sa/exrcsdrive/index.php/s/OXYmH5FVUefgPSr)
+[[Train_5]](https://exrcsdrive.kaust.edu.sa/exrcsdrive/index.php/s/CvFVlUTuxfOB0YD)
+[[Train_6]](https://exrcsdrive.kaust.edu.sa/exrcsdrive/index.php/s/1hQmDYfw3aCWTTE)
+[[Train_7]](https://exrcsdrive.kaust.edu.sa/exrcsdrive/index.php/s/WbO71O88GAXX0th)
+[[Train_8]](https://exrcsdrive.kaust.edu.sa/exrcsdrive/index.php/s/C70nUcgxyIGzTof)
+[[Train_9]](https://exrcsdrive.kaust.edu.sa/exrcsdrive/index.php/s/s0asCRMWVuah925)
+[[Train_10]](https://exrcsdrive.kaust.edu.sa/exrcsdrive/index.php/s/TK7FxlkVideW7se)
+[[Train_11]](https://exrcsdrive.kaust.edu.sa/exrcsdrive/index.php/s/y2VqgoPQDW0IMFy)
+
+The password is: **TrackingNet**.
+
 ### [Update from April 22nd, 2020]: Bittorent solution 
 We are currently experimenting a bittorrent solution to share TrackingNet among the tracking community. The torrent is available on [https://academictorrents.com/details/1faf1b53cc0099d2206f02be42b5688952c3c6b3](https://academictorrents.com/details/1faf1b53cc0099d2206f02be42b5688952c3c6b3).
 
