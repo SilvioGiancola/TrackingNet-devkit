@@ -35,7 +35,7 @@ It may be very slow at the beginning, but it will improve once more people will 
  - The google drive backup links [[link1](https://drive.google.com/drive/u/2/folders/1gJOR-r-jPFFFCzKKlMOW80WFtuaMiaf6)] [[link2](https://drive.google.com/drive/u/2/folders/1xrxlI6otQvWlRJjsX1pddZBY9h2WbmVi)] are still available, but capped in daily bandwidth.
  - If you already have downloaded a chunk from the backup links, please put it in the output folder of your torrent: it won't download it again and will save you precious download time.
  
-**PS:** In case your university/institution blocks your torrents, you can rent a seedbox that will download it for you. It's legal, cheap (<15$ for a full month) and have fast bandwidth (>10MB/sec - Full TrackingNet downloaded in ~1 day). I recommend [seedbox.io](https://seedbox.io/), that provides a direct FTP connection to access TrackingNet once it's downloaded. Fancier seedboxes can support Google Drive, Baidu Pan, Dropbox, ownCloud, AWS S3, etc...
+**PS:** In case your university/institution blocks your torrents, you can rent a seedbox that will download it for you. It's legal, cheap (<15$ for a full month) and have very fast bandwidth (up to 125MB/sec - Full TrackingNet downloaded in 2 hours). I recommend [seedbox.io](https://seedbox.io/) (currently used to seed at up to 125MB/sec), which provides a direct FTP connection to access TrackingNet once it's downloaded. Fancier seedboxes can support Google Drive, Baidu Pan, Dropbox, ownCloud, AWS S3, etc...
  
  
 ### [Update from February 25th, 2020]: Back up links
