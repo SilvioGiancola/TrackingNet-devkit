@@ -27,7 +27,7 @@ The password is: **TrackingNet**.
 For maximum bandwidth performances, use the option "Add to your ownCloud" with any ownCloud account.
 
 ### [Update from April 22nd, 2020]: Bittorent solution 
-We are currently experimenting a bittorrent solution to share TrackingNet among the tracking community. The torrent is available on [https://academictorrents.com/details/1faf1b53cc0099d2206f02be42b5688952c3c6b3](https://academictorrents.com/details/1faf1b53cc0099d2206f02be42b5688952c3c6b3).
+We are currently experimenting a bittorrent solution to share TrackingNet among the tracking community. Multiple torrents are available on [https://academictorrents.com/collection/trackingnet](https://academictorrents.com/collection/trackingnet).
 
 It may be very slow at the beginning, but it will improve once more people will require the a copy. Here are some guidelines:
  - I hope everyone will play fair and seed its torrent as we are currently doing.
