@@ -17,6 +17,15 @@ year = {2018}
 }
 ```
 
+### [Update from Jan 24th, 2021]: pip package
+We have developed a pip package for automatic download and utils function on TrackingNet. You can install it simply with:
+
+```
+pip install TrackingNet
+```
+
+More details on [https://pypi.org/project/TrackingNet/](https://pypi.org/project/TrackingNet/).
+
 ### [Update from May 2nd, 2020]: Backup ownCloud solution
 We have a new ownCloud solution to download the different splits for training/testing:
 
