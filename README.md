@@ -29,7 +29,7 @@ More details on [https://pypi.org/project/TrackingNet/](https://pypi.org/project
 ### [Update from May 2nd, 2020]: Backup ownCloud solution
 We have a new ownCloud solution to download the different splits for training/testing:
 
-https://exrcsdrive.kaust.edu.sa/exrcsdrive/index.php/s/MAaiTPdOwiPDNlp
+https://exrcsdrive.kaust.edu.sa/index.php/s/MAaiTPdOwiPDNlp
 
 The password is: **TrackingNet**.
 
