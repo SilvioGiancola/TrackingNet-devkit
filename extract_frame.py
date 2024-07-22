@@ -3,13 +3,44 @@ from tqdm import tqdm
 import zipfile
 import argparse
 import shutil
+import logging
+import time
 
 
-def main(trackingnet_dir="TrackingNet", overwrite_frames=False, chunks=[]):
+def getLogger(title):
+	log_dir = "../log"
+	if not os.path.exists(log_dir):
+		os.makedirs(log_dir)
+	log_file = os.path.join(log_dir, "{}.log".format(title))
+
+	logger = logging.getLogger("testzip")
+	logger.setLevel(logging.DEBUG)
+	fh = logging.FileHandler(log_file)
+	fh.setLevel(logging.DEBUG)
+	ch = logging.StreamHandler()
+	ch.setLevel(logging.DEBUG)
+	logger.addHandler(fh)
+	logger.addHandler(ch)
+	return logger, fh, ch
+
+
+def releaseLogger(logger):
+	for handler in logger.handlers[:]:
+		handler.close()
+		logger.removeHandler(handler)
+	del logger
+
+
+def main(trackingnet_dir="TrackingNet", overwrite_frames=False, test_zips=False, chunks=[]):
 
 	for chunk_folder in chunks:
 		chunk_folder = chunk_folder.upper()
 		zip_folder = os.path.join(trackingnet_dir, chunk_folder, "zips")
+
+		logger = None
+		if test_zips:
+			logger, fh, ch = getLogger(chunk_folder)
+			logger.info("Start at {}".format(time.strftime("%Y-%m-%d %X")))
 
 		if( os.path.exists(zip_folder)):
 
@@ -34,23 +65,34 @@ def main(trackingnet_dir="TrackingNet", overwrite_frames=False, chunks=[]):
 
 							# if frame folder does not exist, jsut create it
 							else:	
-								same_number_files = False				
-								os.makedirs(frame_folder)
+								same_number_files = False
+								if not test_zips:
+									os.makedirs(frame_folder)
 
 							# extract zip if necessary
 							if(overwrite_frames or not same_number_files):
-								zip_ref.extractall(os.path.join(frame_folder))
+								if test_zips:
+									test_result = zip_ref.testzip()
+									if test_result is not None:
+										logger.info("{} corrupted".format(zip_file))
+								else:
+									zip_ref.extractall(os.path.join(frame_folder))
 
 							# check that all the files were extracted
-							same_number_files = len(zip_ref.infolist()) == len(os.listdir(frame_folder))
-							if (not same_number_files):
-								print("Warning:", frame_folder, "was not well extracted")
+							# from IPython import embed;embed()
+							if not test_zips:
+								same_number_files = len(zip_ref.infolist()) == len(os.listdir(frame_folder))
+								if (not same_number_files):
+									print("Warning:", frame_folder, "was not well extracted")
 
 
 					except zipfile.BadZipFile:
 						print("Error: the zip file", zip_file, "is corrupted, please delete it and download it again.")
 						
-
+		if test_zips:
+			logger.info("Done at {}".format(time.strftime("%Y-%m-%d %X")))
+			logger.info("="*50)
+			releaseLogger(logger)
 
 
 if __name__ == "__main__": 
@@ -59,6 +101,8 @@ if __name__ == "__main__":
 		help='Main TrackingNet folder.')
 	p.add_argument('--overwrite_frames', action='store_true',
 		help='Folder where to store the frames.')
+	p.add_argument('--test_zips', action='store_true',
+		help='Only check .zip files, donnot extract.')
 	p.add_argument('--chunk', type=str, default="ALL",
 		help='List of chunks to elaborate [ALL / Train / Test / 4 / 1,2,5].')
 
@@ -77,10 +121,11 @@ if __name__ == "__main__":
 	except:		
 		chunk = []
 
-
-	print("extracting the frames for the following chunks:")
+	if args.test_zips:
+		operation_desc = "testing zips"
+	else:
+		operation_desc = "extracting the frames"
+	print(operation_desc, "for the following chunks:")
 	print(chunk)
 
-	main(args.trackingnet_dir, args.overwrite_frames, chunk)
-
-
+	main(args.trackingnet_dir, args.overwrite_frames, args.test_zips, chunk)
