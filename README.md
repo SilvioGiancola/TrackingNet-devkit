@@ -17,6 +17,10 @@ year = {2018}
 }
 ```
 
+### [Update from Summer 2025]: huggingface
+
+We have published a version of the dataset on huggingface: https://huggingface.co/datasets/SilvioGiancola/TrackingNet
+
 ### [Update from Jan 24th, 2021]: pip package
 We have developed a pip package for automatic download and utils function on TrackingNet. You can install it simply with:
 
