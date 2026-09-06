@@ -3,8 +3,6 @@
 Development kit for the dataset **TrackingNet: A Large-Scale Dataset and
 Benchmark for Object Tracking in the Wild**.
 
-Compete in our benchmark by submitting your result on our [evaluation server](https://eval.ai/web/challenges/challenge-page/1805/overview).
-
 For more details, please refer to our [paper](https://ivul.kaust.edu.sa/Documents/Publications/2018/TrackingNet%20A%20Large%20Scale%20Dataset%20and%20Benchmark%20for%20Object%20Tracking%20in%20the%20Wild.pdf).
 
 ```
@@ -16,6 +14,9 @@ month = {September},
 year = {2018}
 }
 ```
+### [Update from February 2026] Migration benchmark from eval.ai to codabench.
+
+Due to [changes about eval.ai](https://github.com/SilvioGiancola/TrackingNet-devkit/issues/46#issuecomment-3784483108), we have a new benchmark on [codabench](https://www.codabench.org/competitions/13665/)
 
 ### [Update from Summer 2025]: huggingface
 
