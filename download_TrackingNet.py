@@ -37,11 +37,18 @@ def main(trackingnet_dir="TrackingNet", csv_dir=".", overwrite=False, chunks=[],
 				destination_path = os.path.join(trackingnet_dir, chunk_folder, datum.lower(), Google_drive_file_name)
 
 				if (not os.path.exists(destination_path)): 
-
-					downloader.download(url='https://drive.google.com/uc?id={id}'.format(id=Google_drive_file_id),
-						output=destination_path,
-						quiet=True,
-					)
+					while True:
+						try:
+							downloader.download(url='https://drive.google.com/uc?id={id}'.format(id=Google_drive_file_id),
+								output=destination_path,
+								quiet=False,
+							)
+							break
+						except Exception as e:
+							print("\nException:", e)
+							print("Retrying...")
+							# from IPython import embed;embed()
+							continue
 
 
 
